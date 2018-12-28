@@ -5,11 +5,8 @@ import Todo from './Todo'
 import Grow from '@material-ui/core/Grow';
 import Fade from '@material-ui/core/Fade';
 
-const TodoList = ({ todos, toggleTodo }) => (
+const TodoList = ({ todos }) => (
   <div>
-    <Fade in={true} timeout={1300}>
-      <h2>PROJECTS</h2>
-    </Fade>
     {todos.map((todo, index) => (
       <Grow
         in={true}
@@ -18,7 +15,7 @@ const TodoList = ({ todos, toggleTodo }) => (
         key={todo.id}
       >
         <div>
-          <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
+          <Todo key={todo.id} {...todo} />
         </div>
       </Grow>
     ))}
