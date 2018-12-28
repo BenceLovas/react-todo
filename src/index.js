@@ -21,6 +21,26 @@ const initialState = {
         id: 1,
         text: 'Keep all state in a single tree',
         completed: false
+      },
+      {
+        id: 2,
+        text: 'Keep all state in a single tree',
+        completed: false
+      },
+      {
+        id: 3,
+        text: 'Keep all state in a single tree',
+        completed: false
+      },
+      {
+        id: 4,
+        text: 'Keep all state in a single tree',
+        completed: false
+      },
+      {
+        id: 5,
+        text: 'Keep all state in a single tree',
+        completed: false
       }
     ]
   }

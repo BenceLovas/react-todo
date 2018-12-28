@@ -1,15 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Paper from '@material-ui/core/Paper';
+
 const Todo = ({ onClick, completed, text }) => (
-    <li
+    <Paper
         onClick={onClick}
+        elevation={1}
         style={{
-            textDecoration: completed ? 'line-through' : 'none'
-        }}
+            textDecoration: completed ? 'line-through' : 'none',
+            padding: '1rem',
+            marginBottom: '0.2rem'
+,        }}
     >
         {text}
-    </li>
+    </Paper>
 )
 
 Todo.propTypes = {
