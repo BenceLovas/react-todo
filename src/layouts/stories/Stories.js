@@ -117,13 +117,14 @@ class Stories extends Component {
                   marginLeft: '6vw'
                 }}
               >
-                <Slide direction="right" in={true} timeout={700}>
+                <Slide direction="right" in={true} timeout={300}>
                   <TextField
                     label="TITLE"
                     name="title"
                     value={this.state.title}
                     onChange={this.handleChange}
                     margin="normal"
+                    autoFocus
                   />
                 </Slide>    
         
