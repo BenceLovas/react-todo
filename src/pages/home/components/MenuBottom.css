@@ -1,0 +1,100 @@
+/* html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(#f2f2f2, #e4e4e4);
+} */
+
+.goo-menu {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(#f2f2f2, #dddddd);
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+  cursor: pointer;
+}
+
+.menu {
+  filter: url("#shadowed-goo");
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+}
+
+svg {
+  display: none;
+}
+
+#button {
+  background: radial-gradient(#f2f2f2, #dddddd);
+}
+
+.menu-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 40px;
+  height: 6px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  background: #3a3a3a;
+}
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY(12px);
+  transition: all 0ms 300ms;
+}
+.hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: none;
+}
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+  top: 0;
+  background: red;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  background: red;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/*# sourceMappingURL=menu.css.map */

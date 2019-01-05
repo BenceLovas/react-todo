@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import reducers from './store/reducers';
 import './index.css';
 import Stories from './layouts/stories/Stories'
+import Home from './pages/home/Home'
 
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import green from '@material-ui/core/colors/green';
@@ -74,6 +75,7 @@ render(
       <Router>
         <MuiThemeProvider theme={theme}>
           <Route path="/stories" component={Stories} />
+          <Route path="/home" component={Home} />
         </MuiThemeProvider>  
       </Router>
     </Provider>,
