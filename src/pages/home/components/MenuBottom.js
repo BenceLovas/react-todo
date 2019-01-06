@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './MenuBottom.css';
 
+import Icon from '@material-ui/core/Icon';
+
+
+
 class MenuBottom extends Component {
 
   state = {
@@ -41,18 +45,21 @@ class MenuBottom extends Component {
             className="goo-menu"
             ref={(ele) => this.menuItem1 = ele}
           >
+            <Icon color="primary" style={{ fontSize: '30px' }}>history</Icon>
           </div>    
           <div 
             id="item2"
             className="goo-menu"
             ref={(ele) => this.menuItem2 = ele}
           >
+            <Icon color="primary" style={{ fontSize: '30px' }}>bar_chart</Icon>
           </div>    
           <div
             id="item3"
             className="goo-menu"
             ref={(ele) => this.menuItem3 = ele}
           >
+            <Icon color="primary" style={{ fontSize: '30px' }}>home</Icon>
           </div>    
 
           <div id="button" className="goo-menu" onClick={this.toggleMenu} ref={(ele) => this.menuButton = ele}>

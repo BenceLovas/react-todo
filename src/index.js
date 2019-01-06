@@ -22,7 +22,7 @@ import * as serviceWorker from './serviceWorker';
 const theme = createMuiTheme({
   palette: {
     type: 'light',
-    primary: { light: indigo.A200, main: indigo.A400, dark: indigo[500] },
+    primary: { light: indigo.A200, main: '#3a3a3a', dark: indigo[500] },
     secondary: { light: red[400], main: red[500], dark: red[700] },
     error: red,
     contrastThreshold: 3,

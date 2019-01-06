@@ -17,6 +17,13 @@
   transform: translate3d(0, 0, 0);
   transition: transform ease-out 200ms;
   cursor: pointer;
+  line-height: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.goo-menu:hover {
+  background: radial-gradient(#f2f2f2, #d4d4d4);
 }
 
 .menu {
